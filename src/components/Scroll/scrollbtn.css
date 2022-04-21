@@ -1,0 +1,34 @@
+#scrollbtn {
+    display: flex;
+    padding: .65rem;
+    margin-right: 2rem;
+    border: 1px solid transparent;
+    border-radius: .1rem;
+    background: rgba(112, 119, 147, .15);
+    transition: var(--transition);
+}
+
+.scrollbox {
+    display: flex;
+    justify-content: flex-end;
+    right: .25rem;
+    bottom: 3rem; 
+    z-index: 1;
+    position: fixed;
+}
+
+#scrollbtn:hover {
+    background: rgba(112, 119, 147, .05);
+    color: var(--light); 
+    transition: var(--transition);
+}
+
+.visible {
+    opacity: 100;
+    transition: var(--transition);
+}
+
+.invisible {
+    opacity: 0;
+    transition: var(--transition);
+}

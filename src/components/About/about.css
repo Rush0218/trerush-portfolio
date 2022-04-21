@@ -1,0 +1,141 @@
+small {
+    font-size: .60rem;
+}
+
+#About {
+    padding-bottom: 1rem;
+    padding-top: 2.5rem;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#About > .about-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    border-radius: .10rem;
+    border-top-left-radius: 5rem;
+    width: 75%;
+    background: rgba(67, 69, 92, .20);
+    gap: 5rem;
+    padding: 15rem;
+}
+
+.about-me {
+    width: 100%;
+    /* background: linear-gradient(45deg, transparent, var(--primary-color), transparent); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    border-radius: .10rem;
+    overflow: hidden;
+    display: block;
+    height: 35rem;
+    width: 35rem;
+    /* transform: rotate(10deg); */
+    transition: var(--transition);
+}
+
+.vectorimg {
+    margin-bottom: 3rem;
+    height: 11rem;
+    width: 11rem;
+}
+/* .about-img:hover {
+    transform: rotate(0);
+    transition: var(--transition);
+} */
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.about-card {
+    background: rgba(60, 63, 88, .05);
+    border: .5px solid rgba(112, 119, 147, .25);
+    border-radius: .10rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* box-shadow: 3px 6px rgba(0, 0, 0, 0.25);  */
+}
+
+.about-card:hover {
+    background: transparent;
+    border-color: rgba(59, 186, 156, .45);
+    cursor: default;
+    box-shadow: none;
+}
+
+.about-icon {
+    color: var(--primary-color); 
+    font-size: 1.4rem;
+    margin-bottom: .85rem;
+}
+
+.about-card h5 {
+    font-size: .85rem;
+}
+
+.about-content p {
+    margin: 2rem 0 2.5rem;
+    color: var(--light);
+    font-size: .85rem; 
+}
+
+/* media queries (tablets) */
+@media screen and (max-width: 1024px) {
+
+    
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 0;  
+    }
+
+    .about-me {
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .about-content p {
+        margin: 1rem 0 1.5rem;
+    }
+
+}
+
+/* media queries (mobile devices) */
+@media screen and (max-width: 600px) {
+    .about-me {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem; 
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-content p {
+        margin: 1.5rem 0;
+    }
+}

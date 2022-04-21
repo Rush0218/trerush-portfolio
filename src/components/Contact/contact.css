@@ -1,0 +1,107 @@
+.contact-container {
+    height: 50vh;
+    width: 58%; 
+    display: flex;
+    flex-direction: column;
+    gap: 12%; 
+    margin: auto;
+}
+
+.contact-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.contact-option {
+    /* background: rgba(4, 12, 24, .55); */
+    padding: .5rem;
+    border-radius: .25rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    /* box-shadow: 3px 6px rgba(0, 0, 0, 0.35); */
+}
+
+.contact-option a {
+    margin-top: .75rem;
+    display: inline-block;
+    font-size: 0.75rem;
+}
+
+.contact-icon {
+    font-size: 1.45rem;
+    color: var(--primary-color); 
+}
+
+/* icon colors */
+.messenger {
+    color: rgb(0, 153, 255);
+}
+.linkedin {
+    color: #0e76a8;
+}
+.instagram {
+    color:rgba(200, 55, 171, 1);
+    /* linear-gradient(to right, rgba(255, 221, 85, 1) 0%, rgba(255, 84, 62, 1) 24%, rgba(200, 55, 171, 1) 67%, rgba(102, 0, 255, 1) 87%, rgba(55, 113, 200, 1) 99%); */
+}
+.github {
+    color: rgba(255, 255, 255, 0.85)
+}
+
+.messenger:hover {
+    color: rgb(160, 51, 255);
+    transition: var(--transition);
+}
+.linkedin:hover {
+    color: aqua;
+    transition: var(--transition);
+}
+.instagram:hover {
+    color: rgba(55, 113, 200, 1);
+    transition: var(--transition);
+}
+.github:hover {
+    color: rgba(255, 219, 88, 1);
+    transition: var(--transition);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+
+input, textarea {
+    width: 50%;
+    padding: 1.25rem;
+    background: transparent;
+    border-bottom: 1px solid var(--light);
+    resize: none;
+    color: var(--white); 
+}
+
+input:hover, textarea:hover {
+    border-color: rgba(59, 186, 156, .45);
+}
+
+/* media queries (tablets) */
+@media screen and (max-width: 1024px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 40rem;
+    }
+}
+
+/* media queries (mobile devices) */
+@media screen and (max-width: 600px) {
+    .contact-container {
+        width: var( --container-width-md);
+        margin-bottom: 35rem;
+    }
+}

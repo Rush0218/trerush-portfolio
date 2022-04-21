@@ -1,0 +1,168 @@
+header {
+    height: 100vh;
+    padding-top: 0;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.header-container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+
+
+/* Header social accounts */
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+    position: absolute;
+    left: 0; 
+    bottom: 10rem;
+}
+
+.socials::after {
+    content: '';
+    width: 1px;
+    height: 2.5rem;
+    background-color: var(--primary-color);
+}
+
+/* Header portrait */
+
+.me {
+    position: absolute;
+    width: 22rem;
+    height: 30rem;
+    left: calc(50% - 11rem);
+    margin-top: 2.85rem;
+    overflow: hidden;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    
+}
+
+
+.resume {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 15rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: .85rem;
+    cursor: pointer;
+}
+
+
+/* media queries (tablets) */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 75vh
+    }
+    
+    .socials {
+        bottom: 28rem;
+    }
+
+    .resume {
+        bottom: 33rem;
+    }
+
+}
+
+/* media queries (tablets) */
+@media screen and (max-width: 980px) {
+    header {
+        height: 75vh
+    }
+    
+    .socials {
+        bottom: 28rem;
+    }
+
+    .resume {
+        bottom: 34rem;
+    }
+
+}
+
+/* media queries (tablets) */
+@media screen and (max-width: 880px) {
+    header {
+        height: 85vh
+    }
+    
+    .socials {
+        bottom: 27rem;
+    }
+
+    .resume {
+        bottom: 32rem;
+    }
+
+}
+
+/* media queries (mobile devices) */
+@media screen and (max-width: 780px) {
+    header {
+        height: 100vh;
+    }
+
+    .socials {
+        bottom: 26rem;
+    }
+
+    .resume {
+       bottom: 32rem;
+    }
+}
+
+/* media queries (mobile devices) */
+@media screen and (max-width: 680px) {
+    header {
+        height: 100vh;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .resume {
+        display: none;
+    }
+}
+
+
+/* media queries (mobile devices) */
+@media screen and (max-width: 580px) {
+    header {
+        height: 100vh;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .resume {
+        display: none;
+    }
+}
+
+
+/* media queries (mobile devices) */
+@media screen and (max-width: 480px) {
+    header {
+        height: 100vh;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .resume {
+        display: none;
+    }
+}
