@@ -1,4 +1,4 @@
-*, 
+*,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -15,10 +15,10 @@ nav {
 
 nav a {
     background: transparent;
-    color: var(--light); 
+    color: var(--light);
     height: 3.5rem;
     font-size: .85rem;
-    margin-left: 1.5rem;
+    margin-left: .25rem;
 }
 
 nav a:hover {
@@ -28,10 +28,10 @@ nav a:hover {
 
 
 nav a.active {
-    color: var(--primary-color); 
+    color: var(--primary-color);
 }
 
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -45,7 +45,7 @@ nav a.active {
     justify-content: space-around;
 }
 
-.menubtndiv{
+.menubtndiv {
     display: flex;
     justify-content: space-around;
     background: transparent;
@@ -53,9 +53,13 @@ nav a.active {
     overflow: hidden;
     max-height: 0px;
     transition: var(--transition);
+    z-index: 9999;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
 }
 
-.menubtndiv > button {
+.menubtndiv>button {
     background: transparent;
 }
 
@@ -76,15 +80,15 @@ nav a.active {
 }
 
 
-#navitems > a {
+#navitems>a {
     padding-top: 1.7rem;
-    padding-left: 0; 
+    padding-left: 0;
     padding-right: 1rem;
     position: relative;
     box-sizing: border-box;
 }
 
-.navlogo > a  {
+.navlogo>a {
     font-size: 2rem;
 }
 
@@ -97,29 +101,29 @@ nav a.active {
 }
 
 #nava::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 78%;
-        height: 1px;
-        /* background: var(--primary-color); */
-        background: rgba(59, 186, 156, .45);
-        -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-        -webkit-transform-origin: right;
-                transform-origin: right;
-        transition: -webkit-transform 410ms ease-in;
-        transition: transform 410ms ease-in;
-        transition: transform 410ms ease-in, -webkit-transform 410ms ease-in;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 78%;
+    height: 1px;
+    /* background: var(--primary-color); */
+    background: rgba(59, 186, 156, .45);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    transition: -webkit-transform 410ms ease-in;
+    transition: transform 410ms ease-in;
+    transition: transform 410ms ease-in, -webkit-transform 410ms ease-in;
 
 }
 
 #nava:hover::after {
     -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
     -webkit-transform-origin: left;
-            transform-origin: left;
+    transform-origin: left;
 }
 
 @media (max-width: 65em) {
@@ -129,15 +133,20 @@ nav a.active {
         inset: 0, 0, 0, 30%;
         background: rgba(4, 12, 24, .35);
         backdrop-filter: blur(1rem);
-        height: 100vh;
-        z-index: 1;
+        border: 1px solid transparent;
+        border-radius: .5rem;
+        height: 20rem;
+        width: 20rem;
+        z-index: 999;
         flex-direction: column;
         justify-content: start;
-        align-items: flex-start;
+        align-items: center;
+        margin: 1rem;
         right: 0;
         top: 0;
-        padding: min(25vh, 6rem) 2em;
+        padding: min(25vh, 2rem) 2em;
         padding-left: 4rem;
+        padding-bottom: 4rem;
         transform: translateX(100%);
     }
 
@@ -145,8 +154,9 @@ nav a.active {
         transform: translateX(0%);
         transition: var(--transition);
     }
+
     #navitems[class='close'] {
-        transform: translateX(100%);
+        transform: translateX(105%);
         transition: var(--transition);
     }
 
@@ -154,6 +164,7 @@ nav a.active {
     nav a {
         color: aliceblue;
     }
+
     .menubtndiv {
         visibility: visible;
         overflow: visible;
@@ -168,9 +179,9 @@ nav a.active {
         height: 1px;
         background: rgba(59, 186, 156, .45);
         -webkit-transform: scaleX(0);
-                transform: scaleX(0);
+        transform: scaleX(0);
         -webkit-transform-origin: right;
-                transform-origin: right;
+        transform-origin: right;
         transition: -webkit-transform 410ms ease-in;
         transition: transform 410ms ease-in;
         transition: transform 410ms ease-in, -webkit-transform 410ms ease-in;
@@ -179,10 +190,8 @@ nav a.active {
 
     #nava:hover::after {
         -webkit-transform: scaleX(1);
-                transform: scaleX(1);
+        transform: scaleX(1);
         -webkit-transform-origin: left;
-                transform-origin: left;
+        transform-origin: left;
     }
 }
-
-

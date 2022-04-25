@@ -1,61 +1,55 @@
+/*About section*/
+#About {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background: transparent;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+    /* background: rgba(67, 69, 92, .15); */
+    gap: 5rem;
+}
+
+.about-container h1 {
+    line-height: rem;
+}
+
+.about-img {
+    overflow: hidden;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+    transition: var(--transition);
+    opacity: .90;
+}
+
+
+.about-content {
+    padding: 3rem;
+}
+
+.about-content p {
+    margin: 2rem 0 2.5rem;
+    color: var(--light);
+    font-size: .85rem;
+}
+
 small {
     font-size: .60rem;
 }
 
-#About {
-    padding-bottom: 1rem;
-    padding-top: 2.5rem;
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-
-
-#About > .about-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.about-container {
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
-    border-radius: .10rem;
-    border-top-left-radius: 5rem;
-    width: 75%;
-    background: rgba(67, 69, 92, .20);
-    gap: 5rem;
-    padding: 15rem;
-}
-
-.about-me {
-    width: 100%;
-    /* background: linear-gradient(45deg, transparent, var(--primary-color), transparent); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-img {
-    border-radius: .10rem;
-    overflow: hidden;
-    display: block;
-    height: 35rem;
-    width: 35rem;
-    /* transform: rotate(10deg); */
-    transition: var(--transition);
-}
-
-.vectorimg {
-    margin-bottom: 3rem;
-    height: 11rem;
-    width: 11rem;
-}
-/* .about-img:hover {
-    transform: rotate(0);
-    transition: var(--transition);
-} */
 
 .about-cards {
     display: grid;
@@ -66,14 +60,14 @@ small {
 .about-card {
     background: rgba(60, 63, 88, .05);
     border: .5px solid rgba(112, 119, 147, .25);
-    border-radius: .10rem;
+    border-radius: 2rem;
     padding: 2rem;
     text-align: center;
     transition: var(--transition);
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* box-shadow: 3px 6px rgba(0, 0, 0, 0.25);  */
+
 }
 
 .about-card:hover {
@@ -83,52 +77,56 @@ small {
     box-shadow: none;
 }
 
-.about-icon {
-    color: var(--primary-color); 
-    font-size: 1.4rem;
-    margin-bottom: .85rem;
-}
-
 .about-card h5 {
     font-size: .85rem;
 }
 
-.about-content p {
-    margin: 2rem 0 2.5rem;
-    color: var(--light);
-    font-size: .85rem; 
+.about-icon {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
-/* media queries (tablets) */
+
+
+/*Media Queries*/
+@media screen and (max-width: 1300px) {}
+
 @media screen and (max-width: 1024px) {
 
-    
+
     .about-container {
         grid-template-columns: 1fr;
-        gap: 0;  
+        padding: 5rem;
+        gap: 1rem;
     }
 
-    .about-me {
-        width: 50%;
-        margin: 2rem auto 4rem;
-    }
 
     .about-content p {
         margin: 1rem 0 1.5rem;
+        text-align: center;
     }
 
+    .about-content h1 {
+        text-align: center;
+    }
 }
 
-/* media queries (mobile devices) */
 @media screen and (max-width: 600px) {
-    .about-me {
-        width: 65%;
-        margin: 0 auto 3rem;
-    }
 
     .about-cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem; 
+        grid-template-columns: repeat(2 1fr);
+        gap: 1rem;
+    }
+
+    .about-card {
+        padding: 1rem;
+    }
+
+    .about-icon {
+        height: 1.5rem;
+        width: 1.5rem;
     }
 
     .about-content {
@@ -138,4 +136,44 @@ small {
     .about-content p {
         margin: 1.5rem 0;
     }
+
+    .about-card h5 {
+        font-size: .70rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-container {
+        padding: 1.75rem;
+        padding-top: 2.5rem;
+        padding-bottom: 4.5rem;
+        gap: .25rem;
+    }
+
+    #About {
+        margin-top: 0;
+    }
+
+    .about-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: .5rem;
+    }
+
+    .about-card h5 {
+        font-size: .70rem;
+    }
+
+    .about-card small {
+        font-size: .5rem;
+    }
+
+    .about-card {
+        padding: 1rem;
+    }
+
+    .about-icon {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
 }

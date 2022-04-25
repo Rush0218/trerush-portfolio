@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from '../../assets/filledtrlogo.png';
 import './nav.css';
 import { classNames } from '../../utils/classNames';
+import { Spin as Hamburger } from 'hamburger-react'
 
 // import icons from react icons
 import { BiHomeAlt } from 'react-icons/bi';
@@ -15,6 +16,7 @@ import { IoIosMenu, IoMdClose } from 'react-icons/io';
 const Nav = (props) => {
 
     const [visibility, setVisibility] = useState(false);
+    const [hamburgerIcon, setHamburgerIcon] = useState(false);
 
 
     const {
@@ -78,7 +80,8 @@ const Nav = (props) => {
                 <a href='#Home' onClick={() => { sectionSelected('Home') }}>.tr</a>
             </div>
             <div className='menubtndiv'>
-                <button type='button' id='menubtn' onClick={() => setVisibility(!visibility)} >{visibility ? (<IoIosMenu size={25} />) : (<IoMdClose size={25} />)}</button>
+                {/* <button type='button' id='menubtn' onClick={() => setVisibility(!visibility)} >{visibility ? (<IoIosMenu size={25} />) : (<IoMdClose size={25} />)}</button> */}
+                <Hamburger rounded id='menubtn' size={25} duration={0.65} color='#707793' onToggle={() => setVisibility(!visibility)} toggled={hamburgerIcon} toggle={setHamburgerIcon} />
             </div>
 
             <div id='navitems' className={classNames(
@@ -90,6 +93,7 @@ const Nav = (props) => {
                         setCurrentSection(section)
                         window.scroll(0, 0)
                         setVisibility(!visibility)
+                        setHamburgerIcon(false)
                     }} className={currentSection.name === section.name ? 'active' : ''}>
                         {section.name}
                     </a>

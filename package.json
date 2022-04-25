@@ -9,8 +9,10 @@
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
+    "hamburger-react": "^2.5.0",
     "react": "^18.0.0",
     "react-appear-on-scroll": "^1.2.0",
+    "react-awesome-button": "^6.5.1",
     "react-dom": "^18.0.0",
     "react-dropdown": "^1.9.2",
     "react-icons": "^4.3.1",
@@ -18,7 +20,9 @@
     "react-native-svg": "^12.3.0",
     "react-native-vector-icons": "^9.1.0",
     "react-responsive-carousel": "^3.2.23",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -44,5 +48,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-syntax-jsx": "^7.16.7",
+    "@babel/preset-react": "^7.16.7",
+    "node-sass": "^7.0.1",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.50.1",
+    "sass-loader": "^12.6.0"
   }
 }

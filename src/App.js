@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import logo from './assets/trlogo(filled3).svg'
-import { Slidedata } from './components/Portfolio/Slidedata';
 import {
   About,
   Contact,
   Experience,
   Footer,
-  Header,
+  Hero,
   Nav,
   Portfolio,
   Button
@@ -39,15 +38,15 @@ function App() {
           setContactSelected={setContactSelected}
         />
 
-        <div>
+        <div className='main-container' >
           {headerSelected && !aboutSelected && !experienceSelected && !contactSelected && !portfolioSelected ? (
             <>
-              <Header />
+              <Hero />
               <About />
             </>
           ) : !headerSelected && aboutSelected && !experienceSelected && !contactSelected && !portfolioSelected ? (
             <>
-              <Header />
+              <Hero />
               <About />
             </>
           ) : !headerSelected && !aboutSelected && experienceSelected && !contactSelected && !portfolioSelected ? (

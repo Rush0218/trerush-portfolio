@@ -11,16 +11,18 @@
 .scrollbox {
     display: flex;
     justify-content: flex-end;
-    right: .25rem;
-    bottom: 3rem; 
-    z-index: 1;
+    right: .75rem;
+    bottom: 3rem;
+    z-index: 9999;
     position: fixed;
+    background: transparent;
 }
 
 #scrollbtn:hover {
     background: rgba(112, 119, 147, .05);
-    color: var(--light); 
+    color: var(--light);
     transition: var(--transition);
+    cursor: pointer;
 }
 
 .visible {

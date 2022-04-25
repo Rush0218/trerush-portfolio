@@ -10,7 +10,7 @@ const Footer = () => {
         <footer>
             <div className='footer-container'>
 
-                <div className='footer-options'>
+                {/* <div className='footer-options'>
                     <article className='footer-option'>
                         <a href='https://www.linkedin.com/in/trerush/' target='_blank' ><FaLinkedinIn size={15} className='footer-icon2 f-linkedin' /></a>
                     </article>
@@ -23,7 +23,7 @@ const Footer = () => {
                     <article className='footer-option'>
                         <a href='https://github.com/Rush0218' target='_blank' ><FaGithubAlt size={15} className='footer-icon2 f-github' /></a>
                     </article>
-                </div>
+                </div> */}
                 <div className='footercopy'>
                     <a href='#Home' className='footer-icon'> &copy; 2022 Dev Rush</a>
                 </div>

@@ -1,4 +1,5 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
+import useInput from './useInput';
 import emailjs from '@emailjs/browser';
 import './contact.css';
 
@@ -7,11 +8,28 @@ import { MdOutlineEmail } from 'react-icons/md';
 import { RiMessengerLine } from 'react-icons/ri';
 import { FaInstagram, FaLinkedinIn, FaGithubAlt } from 'react-icons/fa';
 
+import { AwesomeButton } from 'react-awesome-button';
+// import AwesomeButtonStyles from 'react-awesome-button/src/styles/styles.scss'
+import "react-awesome-button/dist/themes/theme-rickiest.css";
+
 
 
 const Contact = () => {
 
     const form = useRef();
+    const email = useInput('');
+    const name = useInput('');
+
+    const [btnEffect, setBtnEffect] = useState(false);
+
+    const btnSettings = {
+        type: 'primary',
+        size: 'medium',
+        ripple: true,
+        disabled: btnEffect
+    }
+
+
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -22,9 +40,9 @@ const Contact = () => {
     };
 
     return (
-        <section id='contact'>
-            <h5>Let's Connect</h5>
-            <h2>Contact Me</h2>
+        <section id='Contact'>
+            <h2>Let's Connect</h2>
+
 
             <div className='container contact-container'>
                 <div className='contact-options'>
@@ -41,12 +59,15 @@ const Contact = () => {
                         <a href='https://github.com/Rush0218' target='_blank' ><FaGithubAlt size={30} className='contact-icon github' /></a>
                     </article>
                 </div>
-                <form ref={form} onSubmit={sendEmail} >
-                    <input type='text' name='name' placeholder='Full Name' required />
-                    <input type='email' name='email' placeholder='Email' required />
-                    <textarea name='message' placeholder='Message' rows='5'></textarea>
-                    <button type='submit' className='btn btn-primary submitbtn'>Submit</button>
-                </form>
+                <div className='form-box'>
+                    <form ref={form} onSubmit={sendEmail}  >
+                        <input placeholder='Full Name' type='text' name='name' required />
+                        <input placeholder='Email' type='email' name='email' required />
+                        <textarea name='message' placeholder='Message' rows='6'></textarea>
+                        <AwesomeButton {...btnSettings}>Submit</AwesomeButton>
+                    </form>
+                </div>
+
             </div>
         </section>
     )
