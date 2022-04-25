@@ -24,43 +24,52 @@ function App() {
 
   return (
     <main>
-      <div id='Home'>
-        <Nav
-          headerSelected={headerSelected}
-          aboutSelected={aboutSelected}
-          experienceSelected={experienceSelected}
-          portfolioSelected={portfolioSelected}
-          contactSelected={contactSelected}
-          setHeaderSelected={setHeaderSelected}
-          setAboutSelected={setAboutSelected}
-          setExperienceSelected={setExperienceSelected}
-          setPortfolioSelected={setPortfolioSelected}
-          setContactSelected={setContactSelected}
-        />
+      <div className='main-container' id='Home'>
+        <div className='main-small'>
+          <div class="circl1-box">
+            <div class="circle1"></div>
+          </div>
+          <div class="circle2-box">
+            <div class="circle2">
+            </div>
+          </div>
+          <Nav
+            headerSelected={headerSelected}
+            aboutSelected={aboutSelected}
+            experienceSelected={experienceSelected}
+            portfolioSelected={portfolioSelected}
+            contactSelected={contactSelected}
+            setHeaderSelected={setHeaderSelected}
+            setAboutSelected={setAboutSelected}
+            setExperienceSelected={setExperienceSelected}
+            setPortfolioSelected={setPortfolioSelected}
+            setContactSelected={setContactSelected}
+          />
 
-        <div className='main-container' >
-          {headerSelected && !aboutSelected && !experienceSelected && !contactSelected && !portfolioSelected ? (
-            <>
-              <Hero />
-              <About />
-            </>
-          ) : !headerSelected && aboutSelected && !experienceSelected && !contactSelected && !portfolioSelected ? (
-            <>
-              <Hero />
-              <About />
-            </>
-          ) : !headerSelected && !aboutSelected && experienceSelected && !contactSelected && !portfolioSelected ? (
-            <>
-              <Experience />
-            </>
-          ) : !headerSelected && !aboutSelected && !experienceSelected && contactSelected && !portfolioSelected ? (
-            <>
-              <Contact />
-            </>
-          ) : <Portfolio />}
+          <div className='component-container'>
+            {headerSelected && !aboutSelected && !experienceSelected && !contactSelected && !portfolioSelected ? (
+              <>
+                <Hero />
+                <About />
+              </>
+            ) : !headerSelected && aboutSelected && !experienceSelected && !contactSelected && !portfolioSelected ? (
+              <>
+                <Hero />
+                <About />
+              </>
+            ) : !headerSelected && !aboutSelected && experienceSelected && !contactSelected && !portfolioSelected ? (
+              <>
+                <Experience />
+              </>
+            ) : !headerSelected && !aboutSelected && !experienceSelected && contactSelected && !portfolioSelected ? (
+              <>
+                <Contact />
+              </>
+            ) : <Portfolio />}
+          </div>
+          <Button />
+          <Footer />
         </div>
-        <Button />
-        <Footer />
       </div>
     </main>
   )

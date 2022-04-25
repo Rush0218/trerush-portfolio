@@ -133,7 +133,7 @@ textarea {
     padding: 1.25rem;
     background: transparent;
     border: 1px solid rgba(112, 119, 147, .25);
-    border-radius: .15rem;
+    border-radius: 1.5rem;
     resize: none;
     color: var(--white);
     transition: var(--transition);

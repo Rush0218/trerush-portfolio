@@ -3,7 +3,7 @@
     padding: .65rem;
     margin-right: 2rem;
     border: 1px solid transparent;
-    border-radius: .1rem;
+    border-radius: 50%;
     background: rgba(112, 119, 147, .15);
     transition: var(--transition);
 }

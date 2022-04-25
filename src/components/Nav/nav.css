@@ -153,11 +153,13 @@ nav a.active {
     #navitems[class='drop'] {
         transform: translateX(0%);
         transition: var(--transition);
+
     }
 
     #navitems[class='close'] {
         transform: translateX(105%);
         transition: var(--transition);
+
     }
 
 

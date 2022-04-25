@@ -23,6 +23,9 @@ const Header = () => {
                     <div className='hero-socials'>
                         <Socials />
                     </div>
+                    {/* <div>
+                        <a></a>
+                    </div> */}
                 </div>
                 <div className='heropic-box'>
                     <img className='hero-pic' src={myPic}></img>
