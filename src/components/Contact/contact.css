@@ -173,6 +173,16 @@ textarea:hover {
         width: 80%;
         transition: var(--transition);
     }
+
+    #Contact {
+        margin-bottom: 20rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #Contact {
+        margin-bottom: 16rem;
+    }
 }
 
 /* media queries (mobile devices) */
@@ -187,7 +197,15 @@ textarea:hover {
         padding: 2.2rem;
     }
 
+
+
     .contact-options {
         gap: .5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #Contact {
+        margin-bottom: 10rem;
     }
 }

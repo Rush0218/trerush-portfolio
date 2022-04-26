@@ -143,12 +143,13 @@ p {
 @media screen and (max-width: 480px) {
 
     header {
-        height: 75vh;
+        height: 100%;
     }
 
     .header-container {
         margin-bottom: 0;
-        height: 75vh;
+        height: 100%;
+        margin-bottom: 8rem;
     }
 
     .hero {

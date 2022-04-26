@@ -494,6 +494,8 @@ section>h2 {
 
 @media screen and (max-width: 480px) {
 
+
+
     .main-small {
 
         background: radial-gradient(circle at 2% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 50%);
@@ -567,8 +569,8 @@ section>h2 {
                 rgba(233, 168, 2, 0));
         animation: traverse-up-right2 18s ease-in-out infinite alternate;
         z-index: -1;
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         border: 1px solid transparent;
         border-radius: 40rem;
         position: absolute;

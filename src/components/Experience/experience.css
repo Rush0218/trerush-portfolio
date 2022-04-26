@@ -264,6 +264,10 @@ small {
         transition: var(--transition);
     }
 
+    #Experience {
+        margin-bottom: 19rem;
+    }
+
 }
 
 
@@ -407,6 +411,10 @@ small {
     .exp-details>div small {
         font-size: .33rem;
         transition: var(--transition);
+    }
+
+    #Experience {
+        margin-bottom: 8rem;
     }
 }
 
