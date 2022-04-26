@@ -4,7 +4,7 @@
     margin-right: 2rem;
     border: 1px solid transparent;
     border-radius: 50%;
-    background: rgba(112, 119, 147, .15);
+    background: rgba(112, 119, 147, .20);
     transition: var(--transition);
 }
 

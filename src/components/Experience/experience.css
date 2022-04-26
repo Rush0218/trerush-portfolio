@@ -331,6 +331,10 @@ small {
         padding: 1rem;
     }
 
+    .experience-container>div {
+        border-radius: 1.3rem;
+    }
+
     .experience-container>div h4 {
         font-size: .75rem;
     }
@@ -345,16 +349,17 @@ small {
 
     .exp-details {
         padding: 0;
+
     }
 
     .exp-content {
-        row-gap: .25rem;
+        row-gap: 1rem;
         column-gap: .25rem;
     }
 
     .exp-icon {
-        height: 1rem;
-        width: 1rem;
+        height: 1.1rem;
+        width: 1.1rem;
     }
 
 
@@ -375,7 +380,7 @@ small {
     }
 
     .exp-details>div h5 {
-        font-size: .45rem;
+        font-size: .5rem;
         transition: var(--transition);
     }
 
@@ -398,16 +403,12 @@ small {
 }
 
 
-/* @media screen and (max-width: 480px) {
-    .experience-container>div h4 {
-        text-align: center;
-        margin-top: .25;
-        margin-bottom: 1.5rem;
-        color: var(--light);
-        font-weight: lighter;
-        font-size: 1rem;
+@media screen and (max-width: 480px) {
+    .exp-details>div small {
+        font-size: .33rem;
+        transition: var(--transition);
     }
-} */
+}
 
 @media screen and (max-width: 380px) {
     .exp-details>div h5 {

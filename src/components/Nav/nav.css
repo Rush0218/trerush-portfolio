@@ -145,7 +145,7 @@ nav a.active {
         right: 0;
         top: 0;
         padding: min(25vh, 2rem) 2em;
-        padding-left: 4rem;
+        padding-left: 3rem;
         padding-bottom: 4rem;
         transform: translateX(100%);
     }

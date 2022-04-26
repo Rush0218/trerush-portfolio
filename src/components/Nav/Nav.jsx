@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from '../../assets/filledtrlogo.png';
 import './nav.css';
 import { classNames } from '../../utils/classNames';
 import { Spin as Hamburger } from 'hamburger-react'
@@ -85,7 +84,7 @@ const Nav = (props) => {
             </div>
 
             <div id='navitems' className={classNames(
-                !visibility ? 'drop' : 'close'
+                !visibility ? 'close' : 'drop'
             )}>
                 {sections.map((section) => (
                     <a id='nava' key={section.name} href={`#${section.name}`} onClick={() => {

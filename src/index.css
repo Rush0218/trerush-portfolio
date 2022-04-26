@@ -42,6 +42,9 @@ body {
 
 }
 
+button {
+    color: rgb(4, 12, 24);
+}
 
 /* ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -233,7 +236,7 @@ section>h2 {
     width: max-content;
     display: inline-block;
     color: var(--light);
-    background: rgba(112, 119, 147, .15);
+    background: rgba(112, 119, 147, .25);
     padding: 0.30rem .45rem;
 
     border-radius: 0.1rem;
@@ -316,6 +319,12 @@ section>h2 {
 
 /* media queries (tablets) */
 @media screen and (max-width: 1024px) {
+    .main-small {
+
+        background: radial-gradient(circle at 10% 23%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 50%);
+
+    }
+
     .container {
         width: var(--container-width-md);
     }
@@ -369,6 +378,12 @@ section>h2 {
 }
 
 @media screen and (max-width: 800px) {
+    .main-small {
+
+        background: radial-gradient(circle at 2% 18%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 50%);
+
+    }
+
     .container {
         width: var(--container-width-md);
     }
@@ -423,6 +438,8 @@ section>h2 {
 
 /* media queries (mobile devices) */
 @media screen and (max-width: 630px) {
+
+
     .container {
         width: var(--container-width-sm);
     }
@@ -476,6 +493,13 @@ section>h2 {
 }
 
 @media screen and (max-width: 480px) {
+
+    .main-small {
+
+        background: radial-gradient(circle at 2% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 50%);
+
+    }
+
     .container {
         width: var(--container-width-sm);
     }

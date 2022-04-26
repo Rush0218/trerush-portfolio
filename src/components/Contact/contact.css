@@ -182,8 +182,9 @@ textarea:hover {
     }
 
     form {
-        width: 100%;
+        width: 95%;
         transition: var(--transition);
+        padding: 2.2rem;
     }
 
     .contact-options {

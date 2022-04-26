@@ -1,5 +1,4 @@
 import React from 'react';
-import Me from '../../assets/me(four).png'
 import Resume from '../../assets/My-resume-2022.pdf';
 import Socials from './Socials';
 import myPic from '../../assets/Me(circle2).png'
@@ -7,9 +6,6 @@ import Nav from '../Nav/Nav';
 import './hero.css';
 
 const Header = () => {
-
-
-
     return (
         <header>
             <div className='header-container'>
