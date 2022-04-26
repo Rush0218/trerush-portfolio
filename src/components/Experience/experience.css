@@ -8,6 +8,7 @@ small {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 30rem;
 }
 
 #Experience>h2 {
@@ -233,7 +234,8 @@ small {
     .experience-container>div {
         width: 100%;
         height: 100%;
-        padding: 2rem;
+        padding: 1.75rem;
+        padding-bottom: 4rem;
         margin: 0 auto;
     }
 
@@ -416,5 +418,9 @@ small {
     .exp-details>div small {
         font-size: .23rem;
         transition: var(--transition);
+    }
+
+    .exp-content {
+        row-gap: .30rem;
     }
 }

@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './about.css';
 import Img from '../../assets/DSC07374.jpg';
-import vector1 from '../../assets/newvector2.png';
-import vector2 from '../../assets/newvector1.png';
-import vector3 from '../../assets/newvector3.png';
+import { classNames } from '../../utils/classNames';
 
 // import icons 
 import { MdWorkOutline } from 'react-icons/md';
@@ -12,14 +10,35 @@ import { FiUsers } from 'react-icons/fi';
 
 
 const About = () => {
+
+
+    const [isAboutVisible, SetAboutVisible] = useState(false);
+
+    const toggleVisibility = () => {
+        if (window.pageYOffset > 200) {
+            SetAboutVisible(true);
+        } else {
+            SetAboutVisible(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', toggleVisibility)
+
+        return () => [
+            window.removeEventListener('scroll', toggleVisibility)
+        ]
+    }, []);
+
+
     return (
         <section id='About'>
 
             <div className='about-container'>
-                <div className='about-img-box'>
+                <div className={classNames(isAboutVisible ? 'about-img-appear about-img-box' : 'about-img-disappear about-img-box')}>
                     <img className='about-img' src={Img} alt='about me image' />
                 </div>
-                <div className='about-content'>
+                <div className={classNames(isAboutVisible ? 'about-content-appear about-content' : 'about-content-disappear about-content')}>
                     <div>
                         <h1>About</h1>
                         <p>
