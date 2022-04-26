@@ -115,56 +115,6 @@
 
 // export default Portfolio
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React from 'react';
 import './portfolio.css';
 //import images 
@@ -175,7 +125,6 @@ import img4 from '../../assets/run-buddy-img.jpg';
 import img5 from '../../assets/Discourse.jpg';
 import img6 from '../../assets/express-notes-img.jpg';
 import img7 from '../../assets/shopping.jpg'
-
 
 
 const Portfolio = () => {
@@ -223,70 +172,9 @@ const Portfolio = () => {
                     <div className='portfolio-content'>
                         <h3 className='card-title'>Pizza Hunt</h3>
                         <p className='card-body'>Food application.</p>
-                        <a className='portfolio-button' href='https://github.com/Rush0218/sky' target='_blank'>Learn More</a>
+                        <a className='portfolio-button' href='https://github.com/Rush0218/pizza-hunt' target='_blank'>Learn More</a>
                     </div>
                 </div>
-                {/* <article className='portfolio-item num1'>
-                    <div className='portfolio-img'>
-                        <img src={img3} alt='' />
-                    </div>
-                    <h3>Music Dive</h3>
-                    <div className='portfolio-btn'>
-                        <a href='https://github.com/Rush0218/project-1' className='btn' target='_blank'>Github</a>
-                        <a href='https://rush0218.github.io/project-1/' className='btn btn-primary' target='_blank'>Application</a>
-                    </div>
-                </article> */}
-                {/* <article className='portfolio-item'>
-                    <div className='portfolio-img'>
-                        <img src={img2} alt='' />
-                    </div>
-                    <h3>Spottr</h3>
-                    <div className='portfolio-btn'>
-                        <a href='https://github.com/Rush0218/spottr' className='btn' target='_blank'>Github</a>
-                        <a href='https://spottr-projecttwo.herokuapp.com/' className='btn btn-primary' target='_blank'>Application</a>
-                    </div>
-                </article> */}
-                {/* <article className='portfolio-item'>
-                    <div className='portfolio-img'>
-                        <img src={img7} alt='' />
-                    </div>
-                    <h3>FiveFires</h3>
-                    <div className='portfolio-bt4'>
-                        <a href='https://github.com/AshtonBrugh/project-three' className='btn' target='_blank'>Github</a>
-                        <a href='https://immense-fortress-45339.herokuapp.com/' className='btn btn-primary' target='_blank'>Application</a>
-                    </div>
-                </article> */}
-
-                {/* <article className='portfolio-item'>
-                    <div className='portfolio-img'>
-                        <img src={img4} alt='' />
-                    </div>
-                    <h3>Run Buddy</h3>
-                    <div className='portfolio-btn'>
-                        <a href='https://github.com/Rush0218/run-buddy' className='btn' target='_blank'>Github</a>
-                        <a href='https://rush0218.github.io/run-buddy/' className='btn btn-primary' target='_blank'>Application</a>
-                    </div>
-                </article> */}
-                {/* <article className='portfolio-item'>
-                    <div className='portfolio-img'>
-                        <img src={img5} alt='' />
-                    </div>
-                    <h3>Discourse</h3>
-                    <div className='portfolio-btn'>
-                        <a href='https://github.com/Rush0218/discourse' className='btn' target='_blank'>Github</a>
-                        <a href='https://discourse-rush.herokuapp.com' className='btn btn-primary' target='_blank'>Application</a>
-                    </div>
-                </article> */}
-                {/* <article className='portfolio-item'>
-                    <div className='portfolio-img'>
-                        <img src={img1} alt='' />
-                    </div>
-                    <h3>Sky</h3>
-                    <div className='portfolio-btn'>
-                        <a href='https://github.com/Rush0218/sky' className='btn' target='_blank'>Github</a>
-                        <a href='https://rush0218.github.io/sky/' className='btn btn-primary' target='_blank'>Application</a>
-                    </div>
-                </article> */}
             </div>
         </section>
     )
