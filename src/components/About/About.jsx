@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './about.css';
-import Img from '../../assets/DSC07374.jpg';
+// import Img from '../../assets/DSC07374.jpg';
+import Img from '../../assets/F-shoot.jpg';
 import { classNames } from '../../utils/classNames';
 
 // import icons 

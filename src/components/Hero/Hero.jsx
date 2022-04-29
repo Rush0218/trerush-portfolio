@@ -1,7 +1,6 @@
 import React from 'react';
-import Resume from '../../assets/My-resume-2022.pdf';
 import Socials from './Socials';
-import myPic from '../../assets/Me(circle2).png'
+import myPic from '../../assets/F-shoot2.png'
 import Nav from '../Nav/Nav';
 import './hero.css';
 
